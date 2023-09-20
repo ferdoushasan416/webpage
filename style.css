@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #de090a;
+  --secondery: #8fdefb;
+  --black: #000000;
+  --white-color: #fff;
+  --yellow-color: #f7c019;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('assets/fonts/Avenir-Black.eot');
+  src: url('assets/fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+       url('assets/fonts/Avenir-Black.woff2') format('woff2'),
+       url('assets/fonts/Avenir-Black.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -----------Avenir-Next-Fonts-------- */
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('assets/fonts/AvenirNext-Regular.eot');
+  src: url('assets/fonts/AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+       url('assets/fonts/AvenirNext-Regular.woff2') format('woff2'),
+       url('assets/fonts/AvenirNext-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -----------Chalkduster-Fonts-------- */
+@font-face {
+  font-family: 'Chalkduster';
+  src: url('assets/fonts/Chalkduster.eot');
+  src: url('assets/fonts/Chalkduster.eot?#iefix') format('embedded-opentype'),
+       url('assets/fonts/Chalkduster.woff2') format('woff2'),
+       url('assets/fonts/Chalkduster.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -----------FuturaLT-BoldOblique-------- */
+@font-face {
+  font-family: 'Futura';
+  src: url('assets/fonts/Futura-BoldOblique.eot');
+  src: url('assets/fonts/Futura-BoldOblique.eot?#iefix') format('embedded-opentype'),
+       url('assets/fonts/Futura-BoldOblique.woff2') format('woff2'),
+       url('assets/fonts/Futura-BoldOblique.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/*
+===============================
+Global CSS START
+===============================
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5rem;
+  font-family: 'Avenir', sans-serif; 
+}
+
+html,
+body {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: normal;
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h4,
+h5 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h4 {
+  font-size: 1.25rem; /* 20px */
+}
+
+h5 {
+  font-size: 1.125rem; /* 18px */
+}
+
+@media screen and (min-width: 991px) {
+h1 {
+    font-size: 2.8125rem; /* 45px */
+}
+
+h2 {
+    font-size: 2.1875rem; /* 35px */
+}
+
+h3 {
+    font-size: 1.875rem; /* 30px */
+ }
+
+h4 {
+    font-size: 1.5rem; /* 24px */
+ }
+
+h5 {
+    font-size: 1.25rem; /* 20px */
+
+  }
+}
+
+@media screen and (min-width: 1360px) {
+h1 {
+    font-size: 5rem; /* 80px */
+}
+
+h2 {
+    font-size: 3rem; /* 48px */
+}
+
+h3 {
+    font-size: 2.5rem; /* 40px */
+}
+
+ h4 {
+    font-size: 1.875rem; /* 30px */
+}
+
+h5 {
+    font-size: 1.5625rem; /* 25px */
+}
+
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/*-----Web btn style Start ------*/
+
+.site-btn {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 17px 35px;
+  display: inline-block;
+  color: var(--white-color);
+  background-color: var(--primary);
+  font-family: 'Avenir Next', sans-serif;
+  font-style: italic;
+  transition: 0.3s all ease;
+  border-radius: 40px;
+}
+
+.site-btn:hover {
+  color: var(--white-color);
+  background-color: var(--black);
+}
+
+/*----- Web btn style end ------*/
+
+#page {
+  overflow: hidden;
+}
+
+/*
+============================
+Global CSS END
+============================
+*/
+
+/*
+============================
+Header Section Start
+============================
+*/
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 300px;
+}
+
+.main-header {
+	padding: 20px 0;
+  position: relative;
+}
+
+.main-menu {
+	text-align: right;
+}
+
+.main-menu ul li {
+  position: relative;
+	display: inline-block;
+	margin: 0 0 0 30px;
+}
+
+.main-menu ul li a {
+	color: var(--black);
+	font-size: 18px;
+	display: block;
+	font-weight: 400;
+	transition: 0.3s all ease;
+	padding: 5px 0px 0px 20px;
+}
+
+.main-menu ul li:hover a {
+  color: var(--primary);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primary);
+}
+
+/*
+============================
+Header Section  End
+============================
+*/
+
+
+/*
+============================
+Hero Section Start
+============================
+
+*/
+.hero-wrapper {
+  padding: 55px 0;
+  background-color: var(--primary);
+}
+
+.hero-item-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.hero-content h5 {
+	color: var(--white-color);
+	font-weight: 400; 
+	margin: 0;
+  font-family: 'Avenir', sans-serif; 
+}
+
+/*
+============================
+Hero Section Ends
+============================
+*/
+
+/*
+============================
+Hero Slider Section Start
+============================
+*/
+
+.hero-slider-wrapper {
+  position: relative;
+}
+
+.single-slider {
+	display: flex !important;
+	align-items: center;
+}
+
+.single-slider.slider-bg {
+	background-size: cover;
+	background-position: center top;
+	background-color: var(--black);
+	background-repeat: no-repeat;
+	height: 800px;
+}
+
+.hero-slider-wrapper .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border: 0;
+  outline: none;
+  padding: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  background: 0;
+  transition: 0.3s all ease;
+  background-size: cover;
+	background-position: center;
+	height: 200px;
+	width: 128px;
+	background-repeat: no-repeat;
+
+}
+
+.hero-slider-wrapper .slick-arrow:hover {
+  color: var(--primary);
+}
+
+.hero-slider-wrapper .slick-arrow.slick-prev .icon {
+  margin-right: 50px;
+}
+
+.hero-slider-wrapper .slick-arrow.slick-next .icon {
+  margin-left: 50px;
+}
+
+.hero-slider-wrapper .slick-arrow.slick-prev {
+	left: 0;
+	background-image: url(assets/images/angle-bg-left.png);
+}
+
+.hero-slider-wrapper .slick-arrow.slick-next {
+  right: 0;
+  background-image: url(assets/images/angle-bg-right.png);
+}
+
+.hero-slider-wrapper .slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.hero-slider-wrapper .slick-dots li {
+  border: 0;
+  width: 35px;
+  height: 4px;
+  outline: none;
+  margin: 0 10px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #9c9898;
+}
+
+.hero-slider-wrapper .slick-dots li.slick-active {
+  background-color: var(--primary);
+}
+
+.hero-slider-wrapper .slick-dots li button {
+  display: none;
+}
+
+.hero-slider-wrapper .slider-content {
+	max-width: 600px;
+	text-align: center;
+}
+
+.slider-content h1 {
+  margin: 0;
+	color: var(--secondery);
+	font-size: 5rem;
+	text-transform: uppercase;
+	font-family: 'Futura';
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.slider-content h4 {
+  font-size: 2rem;
+}
+
+.slider-content .slide-dec-1 {
+  color: var(--secondery);
+  font-family: 'Chalkduster', sans-serif;
+  margin-bottom: 10px;
+}
+
+.slider-content .slide-dec-2 {
+  color: var(--white-color);
+}
+
+.slider-btn-wrapper {
+  margin-top: 75px;
+}
+
+.slider-btn-wrapper .site-btn:hover {
+  color: var(--white-color);
+  background-color: var(--primary);
+}
+
+.slider-btn-wrapper .slide-btn-1 {
+  color: var(--black);
+  background-color: var(--white-color);
+  margin-right: 20px;
+}
+
+.slider-btn-wrapper .slide-btn-2 {
+  color: var(--black);
+  background-color: var(--secondery);
+}
+
+/*
+============================
+Hero Slider Section End
+============================
+*/
+
+/*
+================================
+Les-Spectacles-Section-Start
+===============================
+*/
+
+.les-spectacles-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.section-title h2 {
+  margin-bottom: 30px;
+}
+
+/* .les-spectacles-wrapper .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border: 0;
+  outline: none;
+  font-size: 30px;
+  cursor: pointer;
+  background: 0;
+  transition: 0.3s all ease;
+  
+}
+
+.les-spectacles-wrapper .slick-arrow.slick-prev {
+	left: -130px;
+}
+
+.les-spectacles-wrapper .slick-arrow.slick-next {
+  right: -130px;
+} */
+
+.post-box {
+  position: relative;
+  margin-bottom: 20px;
+  transition: 0.3s all ease;
+  border: 4px solid transparent;
+}
+
+.post-box .site-btn {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: 75px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 17px 50px;
+}
+
+.post-box:hover .site-btn {
+  opacity: 1;
+  visibility: visible;
+} 
+
+.site-btn.box-btn-2 {
+	background-color: var(--yellow-color);
+}
+
+.post-box .site-btn:hover {
+  background-color: var(--primary);
+}
+
+.post-box:hover {
+  border-color: var(--primary);
+ 
+}
+
+.post-content {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.post-content p a {
+  color: var(--black);
+  font-size: 1.25rem;
+}
+
+.post-content span {
+  color: var(--primary);
+}
+
+
+
+/*
+===============================
+Les-Spectacles-Section-End
+===============================
+*/
+
+
+
+/*
+============================
+Footer Section Start
+============================
+*/
+
+
+
+/*
+============================
+Footer Section End
+============================
+*/
+
+
+
+
+
+
+
+
+/*
+============================
+Responsive Style Start
+============================
+*/
+
+@media screen and (min-width: 1360px) {
+
+ .container{
+   max-width: 1320px;
+ }
+
+}
+
+@media only screen and (max-width:1199px) {
+
+.logo {
+  width: 260px;
+}
+
+.main-menu ul li {
+  margin: 0 0 0 2px;
+}
+
+.main-menu ul li a {
+	font-size: 17px;
+	padding: 5px 0px 0px 8px;
+}
+
+.hero-item-wrap {
+	max-width: 700px;
+}
+
+.slider-content h1 {
+	font-size: 4.4rem;
+}
+
+.slider-content h4 {
+	font-size: 1.6rem;
+}
+
+.slider-btn-wrapper {
+	margin-top: 60px;
+}
+
+.site-btn {
+	padding: 16px 35px;
+}
+
+
+
+
+}
+
+@media only screen and (max-width:991px) {
+
+ .hamburger {
+  display: block;
+ }
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+
+ }
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+
+ }
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+ }
+
+.main-menu ul {
+  position: absolute;
+  left: -100%;
+  top: 100%;
+  width: 100%;
+  z-index: 9;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  transition: 0.3s all ease;
+  padding: 50px 0
+}
+
+.main-menu ul.active {
+  left: 0;
+}
+
+.main-menu ul li {
+  margin: 12px 0;
+}
+
+.main-menu ul li a {
+  color: var(--white-color);
+  font-size: 16px;
+}
+
+
+}
+
+@media only screen and (max-width:767px) {
+.logo {
+  width: 220px;
+}
+
+.single-slider.slider-bg {
+  height: 460px;
+  background-position: center center;
+}
+
+.slider-content h1 {
+  font-size: 2rem;
+}
+
+.slider-content h4 {
+  font-size: 1.2rem;
+}
+
+.slider-btn-wrapper {
+	margin-top: 40px;
+}
+
+.slider-btn-wrapper .slide-btn-1 {
+	margin-right: 0;
+	margin-bottom: 15px;
+}
+
+.site-btn {
+	padding: 15px 32px;
+}
+
+.hero-slider-wrapper .slick-arrow {
+	display: none !important;
+}
+
+.hero-slider-wrapper .slick-dots li {
+	width: 25px;
+	margin: 0 5px;
+}
+
+
+}
+/*
+============================
+Responsive Style End
+============================
+*/
