@@ -18,6 +18,18 @@
   font-style: normal;
   font-display: swap;
 }
+/* -----------Avenir-medium-Fonts-------- */
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url('assets/fonts/Avenir-Medium.eot');
+  src: url('assets/fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+      url('assets/fonts/Avenir-Medium.woff2') format('woff2'),
+      url('assets/fonts/Avenir-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* -----------Avenir-Next-Fonts-------- */
 @font-face {
@@ -26,7 +38,6 @@
   src: url('assets/fonts/AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
        url('assets/fonts/AvenirNext-Regular.woff2') format('woff2'),
        url('assets/fonts/AvenirNext-Regular.woff') format('woff');
-  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -230,6 +241,10 @@ ul {
 .site-btn:hover {
   color: var(--white-color);
   background-color: var(--black);
+}
+
+.yellow-btn {
+  background-color: var(--yellow-color);
 }
 
 /*----- Web btn style end ------*/
@@ -551,10 +566,6 @@ Les-Spectacles-Section-Start
   visibility: visible;
 } 
 
-.site-btn.box-btn-2 {
-	background-color: var(--yellow-color);
-}
-
 .post-box .site-btn:hover {
   background-color: var(--primary);
 }
@@ -577,14 +588,107 @@ Les-Spectacles-Section-Start
 .post-content span {
   color: var(--primary);
 }
-
-
-
 /*
 ===============================
 Les-Spectacles-Section-End
 ===============================
 */
+
+/*
+============================
+Nos-Offres-Section-Start
+============================
+*/
+
+.nos-offres-wrapper {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.nos-offres-wrapper .section-title h2 {
+  margin-bottom: 50px;
+}
+
+.offres-box {
+  display: block;
+}
+
+.offres-content {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.offres-content h5 {
+	color: var(--black);
+	font-weight: 500;
+}
+
+.offres-content .site-btn {
+  margin-top: 10px;
+}
+
+/*
+===========================
+Nos-Offres-Section-End
+===========================
+*/
+
+/*
+===========================
+Features-Section-Start
+===========================
+*/
+
+.features-wrapper {
+	position: relative;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.features-wrapper:before {
+  position: absolute;
+  content: "";
+  background-image: url(assets/images/half-image.jpg);
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.features-content-box {
+	border: 6px solid var(--primary);
+	padding: 75px 30px 75px 200px;
+	margin: 100px 180px 100px 130px;
+  overflow: hidden;
+}
+
+.features-content-box h1 {
+  font-size: 4.875rem;
+  line-height: 1;
+  margin: 0;
+  font-style: italic;
+}
+
+.features-content-box h4 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.features-content-box h5 {
+  margin-bottom: 20px;
+}
+
+.features-content-box p {
+  font-family: 'Avenir-Medium';
+}
+
+/*
+===========================
+Features-Section-End
+===========================
+*/
+
+
 
 
 
@@ -658,8 +762,14 @@ Responsive Style Start
 	padding: 16px 35px;
 }
 
+.features-content-box {
+	padding: 45px 30px 45px 100px;
+	margin: 70px 80px 70px 100px;
+}
 
-
+.features-content-box h1 {
+	font-size: 4rem;
+}
 
 }
 
@@ -710,10 +820,32 @@ Responsive Style Start
   font-size: 16px;
 }
 
+.nos-offres-wrapper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.nos-offres-wrapper .section-title h2 {
+	margin-bottom: 40px;
+}
+
+.features-wrapper {
+	margin-top: 50px;
+}
+
+.features-content-box {
+	margin: 45px 80px 45px 70px;
+}
+
+.features-content-box h1 {
+	font-size: 3rem;
+}
+
 
 }
 
 @media only screen and (max-width:767px) {
+
 .logo {
   width: 220px;
 }
@@ -753,6 +885,44 @@ Responsive Style Start
 	margin: 0 5px;
 }
 
+.nos-offres-wrapper .section-title h2 {
+	margin-bottom: 30px;
+}
+
+.offres-box.offres-box-2 {
+	margin-top: 30px;
+}
+
+.offres-content {
+	margin-top: 30px;
+}
+
+.features-wrapper {
+	margin-top: 20px;
+}
+
+.features-wrapper::before {
+	background-image: none;
+}
+
+.features-image {
+  margin: 0 15px;
+  position: relative;
+}
+
+.features-content-box {
+	margin: 0;
+	padding: 20px;
+}
+
+.features-content-box h1 {
+	font-size: 2rem;
+}
+
+.features-content-box p {
+	font-family: 'Avenir-Medium';
+	font-size: 16px;
+}
 
 }
 /*
