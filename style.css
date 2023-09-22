@@ -77,7 +77,7 @@ body {
   padding: 0;
   color: var(--black);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5rem;
   font-family: 'Avenir', sans-serif; 
 }
@@ -146,7 +146,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem; /* 28px */
+  font-size: 2rem; /* 32px */
 }
 
 h3 {
@@ -202,7 +202,7 @@ h3 {
 }
 
 h5 {
-    font-size: 1.5625rem; /* 25px */
+    font-size: 1.5rem; /* 24px */
 }
 
 }
@@ -656,7 +656,7 @@ Features-Section-Start
 }
 
 .features-content-box {
-	border: 6px solid var(--primary);
+	border: 4px solid var(--primary);
 	padding: 75px 30px 75px 200px;
 	margin: 100px 180px 100px 130px;
   overflow: hidden;
@@ -735,12 +735,132 @@ Newsletter Section End
 */
 
 
+
+/*
+============================
+Avis Filter Section Start
+============================
+*/
+
+.avis-filter-wrapper {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.filter-wrap {
+  margin-top: 30px;
+}
+
+.filter-subtitle {
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.filter-item-list ul {
+	display: flex;
+	align-items: center;
+	margin-top: 14px;
+	flex-wrap: wrap;
+}
+
+.filter-item-list  ul li {
+	padding: 16px 12px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border-radius: 40px;
+	cursor: pointer;
+  font-size: 1.1rem;
+  border: 2px solid #bbb;
+	font-family: 'Avenir-Medium';
+}
+
+.filter-item-list ul li.active {
+  color: var(--white-color);
+  background-color: var(--primary);
+}
+
+.filter-item-box {
+	margin-top: 20px;
+}
+
+/*
+============================
+Avis Filter Section End
+============================
+*/
+
+/*
+============================
+Avis Post Section Start
+============================
+*/
+
+.avis-post-wrapper {
+  margin-top: 100px;
+  padding-bottom: 30px;
+}
+
+.avis-img {
+	padding: 50px;
+	border: 4px solid #02aef7;
+}
+
+.avis-gellery {
+  margin-top: 30px;
+}
+
+.avis-post-right {
+	margin-top: 65px;
+}
+
+/*
+============================
+Avis Post Section End
+============================
+*/
+
+/*
+============================
+Le Bar Section Start
+============================
+*/
+
+.le-bar-content-wrapper {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.le-bar-content-wrapper .section-title h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.lequipe-about-wrapper .section-title {
+  text-align: center;
+}
+
+.lequipe-about-right p {
+  font-family: 'Avenir Next';
+  text-align: center;
+}
+
+.lequipe-about-wrapper {
+	margin-bottom: 40px;
+}
+
+/*
+============================
+Le Bar Section End
+============================
+*/
+
+
+
 /*
 ============================
 Footer Section Start
 ============================
 */
-
 
 .footer-wrapper {
   background-color: var(--primary);
@@ -767,7 +887,7 @@ Footer Section Start
   list-style: none;
   font-family: 'Avenir-Medium';
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: normal;
   margin-bottom: 15px;
 }
 
@@ -775,6 +895,7 @@ Footer Section Start
   font-family: 'Avenir-Medium';
   margin-bottom: 30px;
 }
+
 .social-links a {
   display: inline-block;
   width: 50px;
@@ -886,13 +1007,21 @@ Responsive Style Start
 	padding-top: 25px;
 }
 
+.avis-filter-wrapper {
+	margin-top: 60px;
+	padding-bottom: 60px;
+}
+
+.avis-filter-wrapper .section-title h2 {
+	margin: 0;
+}
+
 .social-links a {
 	width: 40px;
 	height: 40px;
 	line-height: 55px;;
 	margin-right: 8px;
 }
-
 
 }
 
@@ -962,6 +1091,19 @@ Responsive Style Start
 
 .features-content-box h1 {
 	font-size: 3rem;
+}
+
+.avis-post-wrapper {
+	margin-top: 50px;
+}
+
+.le-bar-content-wrapper {
+	margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.lequipe-about-right {
+	margin-top: 30px;
 }
 
 .newsletter-text {
@@ -1115,6 +1257,11 @@ Responsive Style Start
 
 .footer-bottom-menu ul li a {
 	font-size: 1rem;
+}
+
+.avis-filter-wrapper {
+	margin-top: 40px;
+	padding-bottom: 60px;
 }
 
 }

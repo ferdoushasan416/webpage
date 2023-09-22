@@ -7,7 +7,84 @@ const navMenu = document.querySelector(".main-menu ul");
 hamburger.addEventListener("click", () => {
    hamburger.classList.toggle("active");
    navMenu.classList.toggle("active");
-})
+});
+
+
+
+
+$(function() {
+    
+  var $filter = $('.filter-item-list');
+  var $tab = $('.filter-item-list li');
+  var $offers = $('.filter-item-box .post-box')
+  
+  $filter.on('click touch', '.créations',  function(e) {
+    e.preventDefault();
+    $tab.removeClass('active');
+    $(this).addClass('active');
+    
+    $offers.hide();
+    $offers.fadeIn( 700 );
+    
+  });
+
+  $filter.on('click touch', '.reprises',  function(e) {
+    e.preventDefault();
+    $tab.removeClass('active');
+    $(this).addClass('active');
+    
+    $offers.show();
+    $offers.fadeOut( 400 );
+    $offers.filter('.reprises').fadeIn( 400 );
+  
+  });
+
+  $filter.on('click touch', '.spectacles',  function(e) {
+    e.preventDefault();
+    $tab.removeClass('active');
+    $(this).addClass('active');
+    
+    $offers.show();
+    $offers.fadeOut( 400 );
+    $offers.filter('.spectacles').fadeIn( 400 );
+   
+  });
+
+  $filter.on('click touch', '.artistes',  function(e) {
+    e.preventDefault();
+    $tab.removeClass('active');
+    $(this).addClass('active');
+    
+    $offers.show();
+    $offers.fadeOut( 400 );
+    $offers.filter('.artistes').fadeIn( 400 );
+   
+  });
+
+  $filter.on('click touch', '.compagnies',  function(e) {
+    e.preventDefault();
+    $tab.removeClass('active');
+    $(this).addClass('active');
+    
+    $offers.show();
+    $offers.fadeOut( 400 );
+    $offers.filter('.compagnies').fadeIn( 400 );
+   
+  });
+
+  $filter.on('click touch', '.théâtre',  function(e) {
+    e.preventDefault();
+    $tab.removeClass('active');
+    $(this).addClass('active');
+    
+    $offers.show();
+    $offers.fadeOut( 400 );
+    $offers.filter('.théâtre').fadeIn( 400 );
+   
+  });
+  
+});
+
 
 
   $(document).ready(function(){
