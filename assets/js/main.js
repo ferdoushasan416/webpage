@@ -95,34 +95,6 @@ $(function() {
         loop:true,
         dots:true,
       });
-
-      // $('.box-slider').slick({
-      //   prevArrow: '<button type="button" class="slick-prev"><svg  width="50" height="50" class="icon" viewBox="0 0 1024 1024"><path d="M768 903.232 717.568 960 256 512 717.568 64 768 120.768 364.928 512z"/></svg></button>',
-      //   nextArrow: '<button type="button" class="slick-next"><svg  width="50" height="50" class="icon" viewBox="0 0 1024 1024"><path d="M256 120.768 306.432 64 768 512 306.432 960 256 903.232 659.072 512z"/></svg></button>',
-      //   slidesToShow: 4,
-      //   slidesToScroll: 1,
-      //   autoplay:false,
-      //   loop:true,
-      //   dots:false,
-      //   responsive: [
-      //     {
-      //       breakpoint: 991,
-      //       settings: {
-      //         slidesToShow: 2,
-      //         slidesToScroll: 2,
-      //       }
-      //     },
-      //     {
-      //       breakpoint: 767,
-      //       settings: {
-      //         slidesToShow: 1,
-      //         slidesToScroll: 1
-      //       }
-      //     },
-          
-      //   ],
-      
-      // });
      
   });
 
